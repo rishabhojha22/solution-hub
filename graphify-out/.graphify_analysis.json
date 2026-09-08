@@ -1,0 +1,232 @@
+{
+  "communities": {
+    "0": [
+      "package",
+      "package_devdependencies",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version",
+      "ref_react_dom",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript"
+    ],
+    "1": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include"
+    ],
+    "2": [
+      "src_components_hub_app",
+      "src_components_hub_app_accessmodal",
+      "src_components_hub_app_admin",
+      "src_components_hub_app_badge",
+      "src_components_hub_app_contribute",
+      "src_components_hub_app_contributions",
+      "src_components_hub_app_duplicatewarning",
+      "src_components_hub_app_header",
+      "src_components_hub_app_home",
+      "src_components_hub_app_icon",
+      "src_components_hub_app_nav",
+      "src_components_hub_app_notifications",
+      "src_components_hub_app_profile",
+      "src_components_hub_app_requests",
+      "src_components_hub_app_resource",
+      "src_components_hub_app_section",
+      "src_components_hub_app_solutioncard"
+    ],
+    "3": [
+      "any",
+      "backend_main",
+      "backend_main_asset",
+      "backend_main_assets",
+      "backend_main_find_path",
+      "backend_main_get_graph",
+      "backend_main_graph_payload",
+      "backend_main_health",
+      "backend_main_load_documents",
+      "backend_main_rationale_1",
+      "backend_main_rationale_29",
+      "backend_main_relationship_answer",
+      "backend_main_seed_local_cosmos",
+      "backend_main_startup",
+      "get",
+      "on_event"
+    ],
+    "4": [
+      "ref_lucide_react",
+      "ref_react",
+      "src_components_knowledge_graph",
+      "src_components_knowledge_graph_asset",
+      "src_components_knowledge_graph_knowledgegraph",
+      "src_components_knowledge_graph_palette",
+      "src_components_knowledge_graph_positions",
+      "src_components_knowledge_graph_seed"
+    ],
+    "5": [
+      "src_components_hub_app_details",
+      "src_components_hub_app_explore",
+      "src_services_solutions",
+      "src_services_solutions_categories",
+      "src_services_solutions_expanded",
+      "src_services_solutions_getsolution",
+      "src_services_solutions_searchsolutions",
+      "src_services_solutions_solutions"
+    ],
+    "6": [
+      "src_services_mock",
+      "src_services_mock_notifications",
+      "src_services_mock_requests",
+      "src_types_index",
+      "src_types_index_availability",
+      "src_types_index_notification",
+      "src_types_index_solution",
+      "src_types_index_solutionrequest"
+    ],
+    "7": [
+      "next_config",
+      "next_config_nextconfig",
+      "ref_next",
+      "src_app_layout",
+      "src_app_layout_metadata",
+      "src_app_layout_rootlayout"
+    ],
+    "8": [
+      "package_dependencies",
+      "package_dependencies_lucide_react",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom"
+    ],
+    "9": [
+      "src_app_page",
+      "src_app_page_page",
+      "src_app_path_page",
+      "src_app_path_page_page",
+      "src_components_hub_app_hubapp"
+    ],
+    "10": [
+      "next_env_d",
+      "next_env_d_rationale_6"
+    ]
+  },
+  "cohesion": {
+    "0": 0.10526315789473684,
+    "1": 0.10526315789473684,
+    "2": 0.11764705882352941,
+    "3": 0.275,
+    "4": 0.25,
+    "5": 0.25,
+    "6": 0.32142857142857145,
+    "7": 0.3333333333333333,
+    "8": 0.4,
+    "9": 0.4,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "backend_main_load_documents",
+      "label": "load_documents()",
+      "degree": 6
+    },
+    {
+      "id": "backend_main_graph_payload",
+      "label": "graph_payload()",
+      "degree": 6
+    },
+    {
+      "id": "backend_main_relationship_answer",
+      "label": "relationship_answer()",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "backend_main_seed_local_cosmos",
+      "label": "seed_local_cosmos()",
+      "degree": 4
+    },
+    {
+      "id": "backend_main_get_graph",
+      "label": "get_graph()",
+      "degree": 4
+    },
+    {
+      "id": "backend_main_assets",
+      "label": "assets()",
+      "degree": 4
+    },
+    {
+      "id": "backend_main_asset",
+      "label": "asset()",
+      "degree": 4
+    },
+    {
+      "id": "backend_main_find_path",
+      "label": "find_path()",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Explore()",
+      "target": "searchSolutions()",
+      "source_files": [
+        "src/components/hub-app.tsx",
+        "src/services/solutions.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    },
+    {
+      "source": "Details()",
+      "target": "getSolution()",
+      "source_files": [
+        "src/components/hub-app.tsx",
+        "src/services/solutions.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "cross-file semantic connection"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

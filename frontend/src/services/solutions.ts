@@ -18,5 +18,6 @@ expanded.forEach((name,i)=>solutions.push({id:name.toLowerCase().replace(/[^a-z0
 export const getSolution = (id:string) => solutions.find(s=>s.id===id);
 export const searchSolutions = (query:string, filters:{category?:string; department?:string; technology?:string}={}) => {
  const terms=query.toLowerCase().split(/\s+/).filter(Boolean);
- return solutions.filter(s=> (!filters.category || s.category===filters.category) && (!filters.department || s.department===filters.department) && (!filters.technology || s.technologies.includes(filters.technology))).map(s=>({s,score:terms.reduce((n,t)=>n+((s.name+" "+s.description+" "+s.keywords.join(" ")+" "+s.technologies.join(" ")).toLowerCase().includes(t)?1:0),0)})).filter(x=>!terms.length||x.score>0).sort((a,b)=>b.score-a.score||b.s.reuseCount-a.s.reuseCount).map(x=>x.s);
+ const matchesTerm=(text:string,term:string)=>new RegExp(`\\b${term.replace(/[.*+?^${}()|[\\]\\]/g,"\\$&")}\\b`).test(text);
+ return solutions.filter(s=> (!filters.category || s.category===filters.category) && (!filters.department || s.department===filters.department) && (!filters.technology || s.technologies.includes(filters.technology))).map(s=>({s,score:terms.reduce((n,t)=>n+(matchesTerm((s.name+" "+s.description+" "+s.keywords.join(" ")+" "+s.technologies.join(" ")).toLowerCase(),t)?1:0),0)})).filter(x=>!terms.length||x.score>0).sort((a,b)=>b.score-a.score||b.s.reuseCount-a.s.reuseCount).map(x=>x.s);
 };

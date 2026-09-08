@@ -1,0 +1,92 @@
+{
+  "backend/data/cosmos_assets.json": {
+    "mtime": 1788886895.3680081,
+    "seen": 1788887768.533241,
+    "ast_hash": "23bc5a54a83ae207013ab0ed143108fa",
+    "semantic_hash": "23bc5a54a83ae207013ab0ed143108fa"
+  },
+  "backend/main.py": {
+    "mtime": 1788886898.0157506,
+    "seen": 1788887768.5332458,
+    "ast_hash": "c4963561679c720717039cdc7ad1072b",
+    "semantic_hash": "c4963561679c720717039cdc7ad1072b"
+  },
+  "next-env.d.ts": {
+    "mtime": 1786623346.6500967,
+    "seen": 1788887768.533248,
+    "ast_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41",
+    "semantic_hash": "0e4a65e8b2b9aa3ed0f8957b9406bd41"
+  },
+  "next.config.ts": {
+    "mtime": 1786623273.707737,
+    "seen": 1788887768.5332491,
+    "ast_hash": "bfe58f8423525e4d45cf474ee74f1e60",
+    "semantic_hash": "bfe58f8423525e4d45cf474ee74f1e60"
+  },
+  "package.json": {
+    "mtime": 1786612724.9431353,
+    "seen": 1788887768.5332503,
+    "ast_hash": "1b94ca02229958cf52f657b9de739c90",
+    "semantic_hash": "1b94ca02229958cf52f657b9de739c90"
+  },
+  "public/mock-cosmos/asset_graph.json": {
+    "mtime": 1788886895.3680081,
+    "seen": 1788887768.5332513,
+    "ast_hash": "23bc5a54a83ae207013ab0ed143108fa",
+    "semantic_hash": "23bc5a54a83ae207013ab0ed143108fa"
+  },
+  "src/app/[...path]/page.tsx": {
+    "mtime": 1786612877.7235482,
+    "seen": 1788887768.5332522,
+    "ast_hash": "12b32a0c2c9068dcf6f007d8bad1567c",
+    "semantic_hash": "12b32a0c2c9068dcf6f007d8bad1567c"
+  },
+  "src/app/layout.tsx": {
+    "mtime": 1786612727.8745701,
+    "seen": 1788887768.5332532,
+    "ast_hash": "60644821a50482d031ef48577c5db55c",
+    "semantic_hash": "60644821a50482d031ef48577c5db55c"
+  },
+  "src/app/page.tsx": {
+    "mtime": 1786612876.4804997,
+    "seen": 1788887768.5332541,
+    "ast_hash": "12b32a0c2c9068dcf6f007d8bad1567c",
+    "semantic_hash": "12b32a0c2c9068dcf6f007d8bad1567c"
+  },
+  "src/components/hub-app.tsx": {
+    "mtime": 1788887045.8498256,
+    "seen": 1788887768.533255,
+    "ast_hash": "64e7921ba864f1ff1c5fa0a489b8b646",
+    "semantic_hash": "64e7921ba864f1ff1c5fa0a489b8b646"
+  },
+  "src/components/knowledge-graph.tsx": {
+    "mtime": 1788887242.868183,
+    "seen": 1788887768.533256,
+    "ast_hash": "fbf4d5d9cabb69c743318cd3186caa7b",
+    "semantic_hash": "fbf4d5d9cabb69c743318cd3186caa7b"
+  },
+  "src/services/mock.ts": {
+    "mtime": 1786612731.3336148,
+    "seen": 1788887768.5332572,
+    "ast_hash": "e2fb79060073c3eb1baa96955fdad0e9",
+    "semantic_hash": "e2fb79060073c3eb1baa96955fdad0e9"
+  },
+  "src/services/solutions.ts": {
+    "mtime": 1786613336.862301,
+    "seen": 1788887768.533258,
+    "ast_hash": "d824d5a0c5de849ff2ba865b076572cf",
+    "semantic_hash": "d824d5a0c5de849ff2ba865b076572cf"
+  },
+  "src/types/index.ts": {
+    "mtime": 1786612729.217159,
+    "seen": 1788887768.5332587,
+    "ast_hash": "403ea50fc8b810d341c2192883c5d0b3",
+    "semantic_hash": "403ea50fc8b810d341c2192883c5d0b3"
+  },
+  "tsconfig.json": {
+    "mtime": 1786613323.5370276,
+    "seen": 1788887768.5332596,
+    "ast_hash": "80d917f823db510183d1fc7d34e936cf",
+    "semantic_hash": "80d917f823db510183d1fc7d34e936cf"
+  }
+}

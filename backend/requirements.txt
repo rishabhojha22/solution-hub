@@ -1,0 +1,4 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+# Free, on-device code/document graph companion (optional at runtime, included for setup).
+graphifyy
