@@ -24,7 +24,7 @@ app = FastAPI(
     version="0.1.0",
     description="Local Cosmos DB-style asset graph with Gremlin-ready relationship traversals.",
 )
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:3000"], allow_methods=["*"], allow_headers=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 def load_documents() -> list[dict[str, Any]]:
     return json.loads(SEED_FILE.read_text(encoding="utf-8"))["documents"]

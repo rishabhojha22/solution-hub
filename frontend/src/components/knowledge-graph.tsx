@@ -10,6 +10,8 @@ type GraphPayload = { nodes: GraphNode[]; edges: GraphEdge[]; stats: Record<stri
 const palette: Record<string,string> = {"Manufacturing":"#18a7a7","Engineering":"#417ee8","Data & Analytics":"#8a63e5","IT":"#ee8c42","Finance":"#d35888","Research":"#5ba46b","Person":"#a78bfa"};
 const queryStopWords = new Set(["a","an","and","are","asset","assets","can","does","do","for","from","give","how","in","is","me","of","on","please","project","projects","show","tell","the","to","use","what","which","who","where","works","working","maintains","maintainer","owns","owner"]);
 const normalize=(value:string)=>value.toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+const graphApiBase = process.env.NEXT_PUBLIC_GRAPH_API_URL || "http://localhost:8000";
+const graphApiUrl = graphApiBase.startsWith("http") ? graphApiBase : `https://${graphApiBase}`;
 
 // Fuzzy match: check if search term matches any part of a label
 const fuzzyMatch = (label: string, searchTerm: string): boolean => {
@@ -40,7 +42,7 @@ export default function KnowledgeGraph(){
  const [destination, setDestination] = useState("asset-08");
  
  useEffect(() => {
-  fetch("http://localhost:8000/graph")
+  fetch(`${graphApiUrl}/graph`)
    .then(r => r.ok ? r.json() : Promise.reject())
    .then(setGraph)
    .catch(() => fetch("/mock-cosmos/asset_graph.json").then(r => r.json()).then(data => setGraph(data)));
